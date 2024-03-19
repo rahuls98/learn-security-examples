@@ -1,3 +1,8 @@
 Briefly explain the vulnerability and why the secure version prevents the vulnerability.
+- In the '/userinfo' route handler, the value of username is taken directly from the request query parameters (req.query). The problem arises because this value is used directly in the MongoDB query without any validation or sanitization. This can lead to a NoSQL Injection vulnerability, where an attacker can manipulate the username query parameter to execute arbitrary MongoDB queries.
+
 Which CIA property does tampering violate?
+- Confidentiality
+
 What additional security mechanisms can you incorporate?
+- Performing input validation and sanitization
