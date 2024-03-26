@@ -1,2 +1,5 @@
-- Briefly explain the vulnerability and why the secure version is better at preventing repudiation than the insecure version.
-- What additional security mechanisms can you incorporate to prevent such attacks?
+Briefly explain the vulnerability and why the secure version is better at preventing repudiation than the insecure version.
+- The insecure.js version lacks authentication and logging, enabling unauthorized message sending and retrieval. This poses repudiation risks due to the inability to trace message origins. Conversely, secure.js implements authentication and logging, requiring user authentication and logging access. This ensures accountability and creates an audit trail, reducing repudiation risks by linking actions to specific users.
+
+What additional security mechanisms can you incorporate to prevent such attacks?
+- Additional security measures to prevent such attacks include robust user authentication, access controls, data encryption, integrity checks, and regular security audits. These measures enhance protection against unauthorized access, tampering, and repudiation risks, ensuring the security and integrity of the messaging system.

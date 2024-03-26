@@ -1,2 +1,9 @@
-- Briefly explain the vulnerability and why the secure version prevents the vulnerability.
-- What additional security mechanisms can you incorporate to prevent such attacks?
+Briefly explain the vulnerability and why the secure version prevents the vulnerability.
+- In the insecure version (insecure.js), attackers can exploit the lack of input validation to craft malicious requests that overwhelm the server with a high volume of queries, exhausting its resources and causing it to become unresponsive to legitimate user requests. The vulnerability leaves it susceptible to Denial of Service (DoS) attacks. The secure version (secure.js) addresses this vulnerability by implementing a try-catch block around the database query. This allows the server to handle errors gracefully and prevent crashes that could result from malicious inputs.
+
+What additional security mechanisms can you incorporate to prevent such attacks?
+- Implement strict input validation to accept only safe values
+- Use parameterized queries to prevent injection attacks
+- Apply Role-based Access Control (RBAC) to restrict unauthorized access
+- Follow the principle of least privilege to limit user permissions
+- Rate limiting

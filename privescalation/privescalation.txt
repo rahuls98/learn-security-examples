@@ -1,0 +1,5 @@
+Briefly explain the vulnerability and why the secure version prevents the vulnerability.
+- The vulnerability in insecure.js allows any user to update another user's role without authentication or authorization, risking privilege escalation. The secure.js version addresses this by implementing session-based authentication, restricting role updates to administrators only. 
+
+What additional security mechanisms can you incorporate to prevent such attacks?
+- Input validation, logging, and rate limiting can further enhance protection against such attacks.
