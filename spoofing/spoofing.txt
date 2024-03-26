@@ -1,1 +1,5 @@
 Briefly explain the vulnerability and why the secure version prevents the vulnerability.
+- The vulnerability in insecure.js lies in its lack of CSRF protection, allowing unauthorized actions like session data modification via HTTP POST requests. In contrast, secure.js addresses this vulnerability by implementing strict session cookie controls and requiring a secret key for session management, thereby fortifying the application against CSRF attacks and unauthorized access to sensitive data.
+
+Which CIA properties do you think Spoofing violates?
+- Integrity & Availability

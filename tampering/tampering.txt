@@ -1,0 +1,6 @@
+Briefly explain the vulnerability and why the secure version prevents the vulnerability.
+- The vulnerability in insecure.js arises due to insufficient input sanitization, allowing malicious scripts to be injected into the application, leading to cross-site scripting (XSS) attacks. When an attacker inputs a script tag into the form, it gets executed when the page is rendered, compromising the integrity of the application and potentially exposing users to harmful actions.
+On the other hand, secure.js mitigates this vulnerability by implementing proper input validation and HTML escaping techniques. By sanitizing user inputs and escaping special characters, the secure version ensures that any malicious scripts are neutralized before being rendered in the browser, thereby preventing XSS attacks and enhancing the overall security of the application.
+
+Which CIA property does tampering violate?
+- Integrity
